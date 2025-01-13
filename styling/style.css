@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Cormorant+Garamond:wght@300;700&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Merriweather:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&family=Quicksand:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 110vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../image/moutain-nigth.jpg");
+  background-repeat: no-repeat;
+  background-color: #0e0b06;
+}
+
+main {
+  margin-top: 4.5rem;
+  margin-bottom: 30rem;
+}
+
+/* Navbar */
+
+header.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-inline: auto;
+  padding: 1.5rem;
+  position: fixed;
+  background-color: #080d13;
+  z-index: 99;
+}
+
+header.navbar-container .logo {
+  align-items: center;
+  display: flex;
+}
+
+header.navbar-container .logo img {
+  width: 100%;
+}
+
+header.navbar-container .logo h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+header.navbar-container .navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.navbar-container .navbar-list ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  gap: 2rem 2rem;
+}
+
+header.navbar-container .extra-bars {
+  margin-inline: 0;
+  display: none;
+}
+
+header.navbar-container .extra-bars a {
+  color: #fff;
+}
+
+header.navbar-container .navbar-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .navbar-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+}
+
+header.navbar-container .navbar-list li:hover a {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Navbar End */
+
+/* Opening Page Start */
+
+main .opening-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+}
+
+main .opening-page .welcome-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #fff;
+  border-radius: 15px;
+  margin: 0 4rem;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  width: 40%;
+  z-index: 1;
+}
+
+main .opening-page .welcome-msg .welcome-desc h1 {
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+  font-size: 50px;
+}
+
+main .opening-page .welcome-msg .welcome-desc p {
+  color: #fff;
+  text-align: center;
+}
+
+/* Opening Page End */
+
+main .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 2rem;
+}
+
+/* About Page Start */
+main .content .about-page {
+  margin: 3rem 0;
+}
+
+main .content .about-page .hero-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 9rem 2rem;
+}
+
+main .content .about-page .hero-content .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+main .content .about-page .hero-content .hero-image img {
+  width: 90%;
+  border-radius: 15px;
+}
+
+main .content .about-page .hero-content .hero-description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .about-page .hero-content .hero-description .desc-title {
+  padding: 1rem;
+}
+
+main .content .about-page .hero-content .hero-description .desc-title h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+main .content .about-page .hero-content .hero-description .desc-paragraph {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .about-page .hero-content .hero-description .desc-paragraph p {
+  color: #fff;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*About Page End */
+
+/* Menu Start */
+
+main .content .menu {
+  padding: 7rem 0;
+}
+
+main .content .menu .menu-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .content .menu .menu-desc h2 {
+  color: #fff;
+  /* padding: 2rem; */
+  font-size: 50px;
+}
+
+main .content .menu .menu-desc p {
+  color: #fff;
+}
+
+main .content .main-card {
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content .main-card .card {
+  margin: 3rem;
+  height: 500px;
+  width: 350px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+main .content .main-card .card .card-image {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex: 1;
+}
+
+main .content .main-card .card .card-image img {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+main .content .main-card .card .card-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+main .content .main-card .card .card-desc .desc-title {
+  margin: 0.5rem;
+}
+
+main .content .main-card .card .card-desc .desc-title h2 {
+  color: #fff;
+  text-align: center;
+}
+
+main .content .main-card .card .card-desc .desc-detail {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+main .content .main-card .card .card-desc .desc-detail p {
+  color: #fff;
+  text-align: justify;
+}
+
+main .content .main-card .card .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+main .content .main-card .card .btn button {
+  background-color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+main .content .main-card .card .btn button a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 1.5rem 0.5rem;
+}
+
+main .content .main-card .card .btn button:hover a {
+  color: black;
+  background: white;
+  padding: 1.5rem 0.5rem;
+  font-weight: bolder;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.card h1 {
+  display: flex;
+  justify-content: center;
+}
+
+aside .company-profile {
+  padding: 5rem 0;
+}
+
+aside .company-profile header h2 {
+  text-align: center;
+  color: #fff;
+  margin: 1rem;
+  font-size: 50px;
+}
+
+aside .company-profile header p {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-inline: 4.5rem;
+  justify-content: center;
+}
+
+aside .company-profile figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+aside .company-profile figure img {
+  width: 25%;
+}
+
+aside .company-profile header section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside .company-profile header section table {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  width: 30%;
+}
+
+aside .company-profile header section table tbody {
+  padding: 1rem 0;
+}
+
+aside .company-profile header section table tbody tr {
+  color: #fff;
+}
+
+aside .company-profile header section table tbody tr th {
+  padding-inline: 1rem;
+  text-align: left;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #0e0b06;
+  text-align: center;
+  font-weight: bold;
+  /* margin-top: 25rem; */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center;
+  }
+
+  header.navbar-container .extra-bars {
+    display: flex;
+  }
+
+  header.navbar-container .logo img {
+    width: 50%;
+  }
+
+  .navbar-container .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -150%;
+    background-color: #080d13;
+    width: 10rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar-container .navbar-list ul {
+    margin-top: -28rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-container .navbar-list ul li a {
+    color: #fff;
+  }
+
+  .navbar-container .navbar-list ul li a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+  }
+
+  .navbar-container .navbar-list.active {
+    right: 0;
+  }
+
+  main .opening-page {
+    height: 15%;
+  }
+
+  main .opening-page .welcome-msg {
+    width: 70%;
+  }
+
+  main .content .about-page .hero-content {
+    flex-direction: column;
+    padding: 6rem 0;
+  }
+
+  main .content .menu {
+    padding-top: 5rem;
+  }
+
+  main .content .main-card {
+    flex-direction: column;
+  }
+
+  aside article.company-profile {
+    padding-top: 7rem;
+  }
+
+  aside .company-profile figure img {
+    width: 50%;
+  }
+
+  aside .company-profile header section table {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: -15rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  footer {
+    margin-top: -13rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  header.navbar-container .logo img {
+    width: 100%;
+  }
+
+  main .opening-page {
+    height: 20%;
+  }
+
+  .navbar-container .navbar-list ul {
+    margin-top: -48rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: 15rem;
+    padding: 2rem;
+  }
+
+  main .content .about-page .hero-content {
+    flex-direction: column;
+    padding: 10rem 0;
+  }
+
+  main .content .menu {
+    padding-top: 8rem;
+  }
+
+  aside .company-profile header section table {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  main .opening-page {
+    height: 25%;
+  }
+
+  header.navbar-container .extra-bars {
+    display: flex;
+    /* margin-right: rem; */
+  }
+
+  .navbar-container .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -150%;
+    background-color: #080d13;
+    width: 10rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar-container .navbar-list ul {
+    margin-top: -55rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-container .navbar-list ul li a {
+    color: #fff;
+  }
+
+  .navbar-container .navbar-list ul li a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+  }
+
+  .navbar-container .navbar-list.active {
+    right: 0;
+  }
+
+  main .content .about-page .hero-content .hero-description .desc-paragraph {
+    padding-inline: 5rem;
+  }
+
+  main .content .menu {
+    padding-top: 7rem;
+  }
+
+  main .content .main-card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  main .content .about-page .hero-content {
+    flex-direction: column;
+    padding: 17rem 0;
+  }
+
+  main .content .menu {
+    padding-top: 7rem;
+  }
+
+  aside article.company-profile {
+    padding: 25rem 0;
+  }
+
+  footer {
+    margin-top: 20rem;
+    padding: 2rem;
+  }
+}
